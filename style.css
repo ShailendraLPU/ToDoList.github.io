@@ -4,15 +4,34 @@
     padding: 0px;
     margin: 0px;
 }
+body
+{   width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
 
 nav
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1rem;
-    text-align: center;
     background-color: #0077b6;
 }
+
+nav i 
+{
+  
+    color: #0f2027;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+
 
 section
 {
@@ -21,36 +40,40 @@ section
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    margin-top: -1rem;
+ 
 }
 
 section div
 {
    
- 
+   
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+  
 
 }
+
 
 section div input
 {
-    
-   border-color: #4361ee;
-    font-size: 2rem;
-     width: 90%;
-}
-
-
-section div button
-{
+  
     color: white;
-    background-color: #4361ee;
+    border: none;
     font-size: 2rem;
-    border-color: #4361ee;
-    width: 10%;
-    cursor: pointer;
+    width: 100%;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+
 }
+
+section>div input
+{
+    display: none;
+}
+
 
 section ul
 {
@@ -86,8 +109,10 @@ section ul div li
     margin-top: 0.4rem;
     background-color: #ffd60a;
     color: white;
+    padding-left: 2%;
    
 }
+
 
 
 section ul div:nth-of-type(2n+1) li
@@ -111,7 +136,7 @@ section ul div li div
 section ul div li div i
 {
     height: 100%;
-    color:white;
+    color:#0f2027;
     background-color: #4361ee;
     cursor: pointer;
     padding: 0.6rem;
@@ -155,12 +180,17 @@ section ul div:nth-of-type(2n+2) li .lineth
 }
 
 
+
 @media screen and (max-width:1076px)
 {
     section ul {
     
         width: 58%;
+
       
+    }
+    section div{
+        width: 62%;
     }
 }
 
@@ -172,6 +202,7 @@ section ul div:nth-of-type(2n+2) li .lineth
         width: 65%;
       
     }
+   
 }
 
 
@@ -193,17 +224,12 @@ section ul div:nth-of-type(2n+2) li .lineth
         width: 80%;
       
     }
-}
-/* 
 
-@media screen and (max-width:340px)
-{
-    section ul {
-    
-        width: 90%;
-      
+    section div
+    {
+        width: 85%;
     }
-} */
+}
 
 
 @media screen and (max-width:444px)  /* 312 */
@@ -236,7 +262,7 @@ section ul {
   
 } 
 
-
+}
 
 section ul div li div i:nth-of-type(2)
 {
@@ -249,10 +275,18 @@ section ul div:nth-of-type(2n+2) li div i:nth-of-type(2)
     background-color: #e85d04;
 }
 
-
-section ul div li div i {
-   
-    width: 30%;
-    text-align: center;
-} 
+section ul div li input{
+    width: 100%;
+  padding: 0 1% 0 1%;
 }
+
+.visible
+{
+  display: block;
+}
+
+.section1
+{
+    margin-top: 0rem;
+}
+
